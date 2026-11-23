@@ -1,0 +1,17 @@
+{
+  "name": "pulseplan-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=client",
+    "build:client": "npm run build --workspace=client",
+    "preview:client": "npm run preview --workspace=client",
+    "lint:client": "npm run lint --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "start:server": "npm run start --workspace=server"
+  }
+}

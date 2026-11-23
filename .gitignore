@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build & Vite cache
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Environment & Logs
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+
+# Tests & Coverage
+coverage/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project docs (local agent context)
+docs/

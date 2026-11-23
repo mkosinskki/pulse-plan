@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Light mode */
+  --color-canvas: #F7F6F2;
+  --color-surface: #FFFFFF;
+  --color-subtle: #EFECE5;
+  --color-ink: #181816;
+  --color-muted: #5C5A54;
+  --color-accent: #1B6B56;
+
+  /* Dark mode */
+  --color-darkCanvas: #121211;
+  --color-darkSurface: #1B1B19;
+  --color-darkSubtle: #262522;
+  --color-darkInk: #F2F0EA;
+  --color-darkMuted: #A8A49B;
+  --color-darkAccent: #3BB291;
+
+  /* Semantyka energii i akcji (tła robimy przez /15, np. bg-energyLow/15) */
+  --color-energyLow: #B45309;
+  --color-energyMed: #15803D;
+  --color-energyHigh: #0369A1;
+  --color-danger: #B91C1C;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
