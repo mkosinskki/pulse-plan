@@ -3,29 +3,27 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Light mode */
-  --color-canvas: #F7F6F2;
-  --color-surface: #FFFFFF;
-  --color-subtle: #EFECE5;
+  --color-canvas: #f7f6f2;
+  --color-surface: #ffffff;
+  --color-subtle: #efece5;
   --color-ink: #181816;
-  --color-muted: #5C5A54;
-  --color-accent: #1B6B56;
+  --color-muted: #5c5a54;
+  --color-accent: #1b6b56;
 
-  /* Dark mode */
   --color-darkCanvas: #121211;
-  --color-darkSurface: #1B1B19;
+  --color-darkSurface: #1b1b19;
   --color-darkSubtle: #262522;
-  --color-darkInk: #F2F0EA;
-  --color-darkMuted: #A8A49B;
-  --color-darkAccent: #3BB291;
+  --color-darkInk: #f2f0ea;
+  --color-darkMuted: #a8a49b;
+  --color-darkAccent: #3bb291;
 
-  /* Semantyka energii i akcji (tła robimy przez /15, np. bg-energyLow/15) */
-  --color-energyLow: #B45309;
-  --color-energyMed: #15803D;
-  --color-energyHigh: #0369A1;
-  --color-danger: #B91C1C;
+  --color-energyLow: #b45309;
+  --color-energyMed: #0f766e;
+  --color-energyHigh: #c2410c;
+  --color-danger: #b91c1c;
 
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 @layer base {
